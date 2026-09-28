@@ -1,0 +1,26 @@
+{
+  "name": "aerolab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "cfd:serve": "python3 cfd/server.py",
+    "cfd:case": "python3 cfd/case.py cfd/cases/cuboid",
+    "test:cfd": "python3 -m unittest discover -s tests -v",
+    "test:flight": "node --test tests/flight.test.js",
+    "cfd:drone": "python3 cfd/drone_case.py cfd/cases/drone",
+    "cfd:drone:run": "python3 cfd/drone_case.py cfd/runs/drone-coarse --run"
+  },
+  "dependencies": {
+    "hls.js": "^1.7.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}

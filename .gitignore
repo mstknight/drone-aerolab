@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.DS_Store
+
+cfd/runs/
+cfd/cases/
+__pycache__/
+.env.local
+
+cfd/solver.lock
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key
